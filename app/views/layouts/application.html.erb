@@ -23,6 +23,23 @@
   </head>
 
   <body>
+    <nav class="navbar is-primary">
+      <div class="navbar-brand">
+        <div class="m-4">
+          <%= image_tag("Logo.svg") %>
+        </div>
+      </div>
+      <div class="navbar-menu"
+        <div class="navbar-start">
+          <ul class="navbar-item">
+            <li class="navbar-link is-arrowless"><%= link_to "About", about_path %></li>
+            <li class="navbar-link is-arrowless"><%= link_to "Home", home_path %></li>
+            <!-- Additional navigation links here -->
+          </ul>
+        </div>
+      </div>
+    </nav>
+
     <%= yield %>
   </body>
 </html>
