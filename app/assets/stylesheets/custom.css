@@ -1,5 +1,4 @@
-:root {
-  --bulma-primary-h: 24deg;
-  --bulma-primary-s: 96%;
-  --bulma-primary-l: 50%;
+:root,
+[data-bs-theme="light"] {
+  --bs-primary-rgb: 219, 82, 15;
 }
