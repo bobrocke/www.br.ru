@@ -1,5 +1,5 @@
-:root,
-[data-bs-theme="light"] {
-  --bs-primary-rgb: 232, 102, 23;
-  --bs-primary: #e86617;
+:root {
+  --bulma-primary-h: 24deg;
+  --bulma-primary-s: 96%;
+  --bulma-primary-l: 50%;
 }
