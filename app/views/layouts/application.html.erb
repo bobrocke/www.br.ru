@@ -17,9 +17,7 @@
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
 
-    <link
-      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
-    >
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css">
 
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
@@ -31,7 +29,7 @@
   <body>
     <nav class="navbar has-background-primary">
       <div>
-        <div class="navbar-brand">
+        <div class="navbar-brand m-4">
           <a href="<%= home_path %>">
             <%= image_tag("Logo.svg") %>
           </a>
@@ -41,7 +39,6 @@
             <span aria-hidden="true"></span>
             <span aria-hidden="true"></span>
           </a>
-        </div>
         <div class="navbar-menu">
           <div class="navbar-start">
             <a class="navbar-item" href="<%= home_path %>"> Home</a>
