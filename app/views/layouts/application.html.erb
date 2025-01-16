@@ -16,6 +16,10 @@
     <link rel="icon" href="/icon.png" type="image/png">
     <link rel="icon" href="/icon.svg" type="image/svg+xml">
     <link rel="apple-touch-icon" href="/icon.png">
+    
+    <link
+      rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
+    >
 
     <link
       rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
@@ -24,23 +28,35 @@
     <%# Includes all stylesheet files in app/assets/stylesheets %>
     <%= stylesheet_link_tag :app, "data-turbo-track": "reload" %>
 
-
+    
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
-    <nav class="navbar has-background-primary">
+    <nav>
       <div>
-        <div class="navbar-brand">
-          <a href="<%= home_path %>">
-            <%= image_tag("Logo.svg") %>
-          </a>
-          <a class="navbar-burger" role="button" aria-label="menu" aria-expanded="false">
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-            <span aria-hidden="true"></span>
-          </a>
+        <a">
+          <%= image_tag("Logo.svg") %>
+        </a>
+        <div>
+          <ul>
+            <li>
+              <a href="<%= home_path %>">Home</a>
+            </li>
+            <li>
+              <a href="#">Link</a>
+            </li>
+            <li>
+              <a>
+                Dropdown
+              </a>
+              <ul>
+                <li<%= link_to "About", about_path %></li>
+                <li<%= link_to "Home", home_path %></li>
+                <li<%= link_to "Dropdown", home_path %></li>
+              </ul>
+            </li>
+          </ul>
         </div>
         <div class="navbar-menu">
           <div class="navbar-start">
