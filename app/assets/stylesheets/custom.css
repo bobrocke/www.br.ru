@@ -1,4 +1,14 @@
 :root {
+  /* colors are HSL */
   --bulma-primary-h: 173deg;
   --bulma-primary-l: 31%;
+}
+
+.navbar {
+  --bulma-navbar-item-img-max-height: 10rem;
+  --bulma-link: var(--bulma-navbar-item-color);
+}
+
+.navbar-item img {
+  margin: 1rem;
 }
