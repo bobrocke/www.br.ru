@@ -27,4 +27,3 @@ To Do
 
 Change fonts: serif and sans-serif
 Try responsive Bulma
-Edit VS Code and Nova themes
