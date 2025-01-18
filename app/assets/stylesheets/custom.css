@@ -1,9 +1,11 @@
 :root {
   --bs-primary-rgb: 0, 156, 137;
-  --bs-primary: #009C89;
-  --bs-primary-bg-subtle: #00D6BD
+  --bs-primary: #009c89;
+  --bs-primary-bg-subtle: #00d6bd;
+  --bs-font-sans-serif: Figtree, sans-serif;
 }
-.dropdown-item.active, .dropdown-item:active {
+.dropdown-item.active,
+.dropdown-item:active {
   color: #fff;
   text-decoration: none;
   background-color: var(--bs-primary);
