@@ -22,8 +22,3 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
-
-To Do
-
-Change fonts: serif and sans-serif
-Try responsive Bulma
