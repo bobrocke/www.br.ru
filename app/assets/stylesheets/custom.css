@@ -9,6 +9,16 @@
   background-color: var(--bs-primary);
 }
 
+.dropdown-menu a:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--bs-primary);
+}
+
 .navbar .navbar-nav .nav-link:hover {
   color: var(--bs-primary-bg-subtle);
+}
+
+h1 {
+  color: var(--bs-primary);
 }
