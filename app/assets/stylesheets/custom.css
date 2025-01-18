@@ -1,10 +1,14 @@
-:root,
-[data-bs-theme="light"] {
+:root {
   --bs-primary-rgb: 0, 156, 137;
   --bs-primary: #009C89;
+  --bs-primary-bg-subtle: #00D6BD
+}
+.dropdown-item.active, .dropdown-item:active {
+  color: #fff;
+  text-decoration: none;
+  background-color: var(--bs-primary);
 }
 
 .navbar .navbar-nav .nav-link:hover {
-  background-color: white;
-  color: var(--bs-nav-link-color);
+  color: var(--bs-primary-bg-subtle);
 }
