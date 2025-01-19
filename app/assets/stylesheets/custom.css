@@ -4,6 +4,9 @@
   --bulma-primary-l: 31%;
 }
 
+/*
+Navbar Customizations
+*/
 .navbar {
   --bulma-navbar-item-img-max-height: 10rem;
   --bulma-link: var(--bulma-navbar-item-color);
@@ -11,4 +14,8 @@
 
 .navbar-item img {
   margin: 1rem;
+}
+
+.navbar-dropdown a.navbar-item:hover {
+  background-color: var(--bulma-primary);
 }
