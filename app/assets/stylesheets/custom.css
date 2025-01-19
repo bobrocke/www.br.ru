@@ -19,3 +19,24 @@ Navbar Customizations
 .navbar-dropdown a.navbar-item:hover {
   background-color: var(--bulma-primary);
 }
+
+/* Burger menu activation */
+#menu-switch {
+  display: none;
+}
+
+#menu-switch:checked + .navbar-brand .navbar-burger span:nth-child(1) {
+  transform: translateY(5px) rotate(45deg);
+}
+
+#menu-switch:checked + .navbar-brand .navbar-burger span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-switch:checked + .navbar-brand .navbar-burger span:nth-child(3) {
+  transform: translateY(-5px) rotate(-45deg);
+}
+
+#menu-switch:checked ~ .navbar-menu {
+  display: block;
+}
