@@ -1,11 +1,10 @@
 <div class="container-fluid mt-4 px-4">
   <h1>Calculate a Range of Colors</h1>
-  <p>Find me in app/views/ranges/ranges.html.erb</p>
 
-  <div class="row">
+  <div class="row mt-4">
     <div class="col">
       <span>Reference Color</span>
-      <div class="w-75 h-75 <%= @the_color_hex %> mt-2"></div>
+      <div class="w-75 h-75 mt-2" style="background-color: <%= @the_color_as_hex %>"></div>
     </div>
     <div class="col">
       <form class="requires-validation" novalidate>
@@ -17,10 +16,10 @@
       </form>
     </div>
     <div class="col">
-      <%= form_with url: "set_color_hex", :html => {:class => 'mb-3'}, method: :post do |form| %>
-        <%= form.label 'Color: HEX' %>
-        <%= form.text_field :the_color_hex%>
-        <%= form.submit 'Enter' %>
+      <%= form_with url: "set_color_hex", method: :post do |form| %>
+        <%= form.label "Color: HEX", class: "form-label" %>
+        <%= form.text_field :the_color_hex, class: "form-control"%>
+        <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
       <% end %>
     </div>
     <div class="col">Column</div>
