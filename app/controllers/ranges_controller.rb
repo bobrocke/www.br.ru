@@ -4,17 +4,14 @@ class RangesController < ApplicationController
   # end
 
   def ranges
-    # @the_color_hex = "#888888"
-    @the_color_as_hex = @the_color_hex
-    logger.info @the_color_as_hex
-    logger.info @the_color_hex
   end
 
   def set_color_hex
-    @the_color_hex = params[:the_color_hex]
+  end
 
-    logger.info @the_color_hex
+  def set_color_rgb
+  end
 
-    render :ranges
+  def set_color_hsl
   end
 end

@@ -7,21 +7,49 @@
       <div class="w-75 h-75 mt-2" style="background-color: <%= @the_color_as_hex %>"></div>
     </div>
     <div class="col">
-      <form class="requires-validation" novalidate>
-        <div class="mb-3">
-          <label for="hex" class="form-label">Color: HEX</label>
-          <input type="text" class="form-control" id="hexInput" required>
-        </div>
-        <button type="submit" class="btn btn-primary">Enter</button>
-      </form>
-    </div>
-    <div class="col">
       <%= form_with url: "set_color_hex", method: :post do |form| %>
-        <%= form.label "Color: HEX", class: "form-label" %>
-        <%= form.text_field :the_color_hex, class: "form-control"%>
+        <%= form.label "color_hex", "Color HEX", class: "form-label" %>
+        <div class="row">
+          <div class="col">
+            <%= form.text_field :the_color_hex, placeholder: "#xxxxxx", class: "form-control"%>
+          </div>
+        </div>
         <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
       <% end %>
     </div>
-    <div class="col">Column</div>
+    <div class="col">
+      <%= form_with url: "set_color_rgb", method: :post do |form| %>
+        <%= form.label "color_rgb", "Color RGB", class: "form-label" %>
+        <div class="row">
+          <div class="col">
+            <%= form.text_field :the_color_r, placeholder: "R", class: "form-control"%>
+          </div>
+          <div class="col">
+            <%= form.text_field :the_color_g, placeholder: "G", class: "form-control"%>
+          </div>
+          <div class="col">
+            <%= form.text_field :the_color_b, placeholder: "B", class: "form-control"%>
+          </div>
+        </div>
+        <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
+      <% end %>
+    </div>
+    <div class="col">
+      <%= form_with url: "set_color_hsl", method: :post do |form| %>
+        <%= form.label "color_hsl", "Color HSL", class: "form-label" %>
+        <div class="row">
+          <div class="col">
+            <%= form.text_field :the_color_h, placeholder: "H", class: "form-control"%>
+          </div>
+          <div class="col">
+            <%= form.text_field :the_color_s, placeholder: "S", class: "form-control"%>
+          </div>
+          <div class="col">
+            <%= form.text_field :the_color_l, placeholder: "L", class: "form-control"%>
+          </div>
+        </div>
+        <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
+      <% end %>
+    </div>
   </div>
 </div>
