@@ -1,8 +1,5 @@
 {
   "clips" : [
-    {
-      "content" : "bin\/rails server",
-      "name" : "Start the server"
-    }
+
   ]
 }

@@ -27,3 +27,14 @@
 /tmp/storage/*
 !/tmp/storage/
 !/tmp/storage/.keep
+
+rails_notes.txt
+to_do.txt
+/.github
+/.kamal
+/.nova
+/.ruby-lsp
+/.vscode
+
+.gitattributes
+.gitignore
