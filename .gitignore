@@ -38,3 +38,5 @@ to_do.txt
 
 .gitattributes
 .gitignore
+
+/config/master.key
