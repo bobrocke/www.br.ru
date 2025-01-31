@@ -12,6 +12,6 @@ class RangesController < ApplicationController
   def set_color_rgb
   end
 
-  def set_color_hsl
+  def set_color_hsb
   end
 end

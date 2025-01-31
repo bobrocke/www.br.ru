@@ -10,8 +10,8 @@
       <%= form_with url: "set_color_hex", method: :post do |form| %>
         <%= form.label "color_hex", "Color HEX", class: "form-label" %>
         <div class="row">
-          <div class="col">
-            <%= form.text_field :the_color_hex, placeholder: "#xxxxxx", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_hex, value: "#xxxxxx", class: "form-control"%>
           </div>
         </div>
         <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
@@ -21,31 +21,31 @@
       <%= form_with url: "set_color_rgb", method: :post do |form| %>
         <%= form.label "color_rgb", "Color RGB", class: "form-label" %>
         <div class="row">
-          <div class="col">
-            <%= form.text_field :the_color_r, placeholder: "R", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_r, value: "R", class: "form-control"%>
           </div>
-          <div class="col">
-            <%= form.text_field :the_color_g, placeholder: "G", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_g, value: "G", class: "form-control"%>
           </div>
-          <div class="col">
-            <%= form.text_field :the_color_b, placeholder: "B", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_b, value: "B", class: "form-control"%>
           </div>
         </div>
         <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
       <% end %>
     </div>
     <div class="col">
-      <%= form_with url: "set_color_hsl", method: :post do |form| %>
-        <%= form.label "color_hsl", "Color HSL", class: "form-label" %>
+      <%= form_with url: "set_color_hsb", method: :post do |form| %>
+        <%= form.label "color_hsl", "Color HSB", class: "form-label" %>
         <div class="row">
-          <div class="col">
-            <%= form.text_field :the_color_h, placeholder: "H", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_h, value: "H", class: "form-control"%>
           </div>
-          <div class="col">
-            <%= form.text_field :the_color_s, placeholder: "S", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_s, value: "S", class: "form-control"%>
           </div>
-          <div class="col">
-            <%= form.text_field :the_color_l, placeholder: "L", class: "form-control"%>
+          <div class="col" style="color: var(--bs-gray-500)">
+            <%= form.text_field :the_color_b, value: "B", class: "form-control"%>
           </div>
         </div>
         <%= form.submit 'Enter', class: "btn btn-primary mt-3" %>
