@@ -14,6 +14,5 @@ Rails.application.routes.draw do
   # root "posts#index"
   get "home", to: "homepage#home"
   get "about", to: "about#about"
-  get "ranges", to: "ranges#ranges"
-  post "set_color_hex", to: "ranges#set_color_hex"
+  get "colors", to: "colors#colors"
 end
