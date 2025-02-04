@@ -7,3 +7,14 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+#
+#
+Color.create!([
+  hex: "#888888",
+  r: 136,
+  g: 136,
+  b: 136,
+  h: 0,
+  s: 0,
+  l: 53 ]
+)

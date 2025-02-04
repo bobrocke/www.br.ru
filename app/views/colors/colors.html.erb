@@ -4,7 +4,7 @@
   <div class="row mt-4">
     <div class="col">
       <span>Reference Color</span>
-      <div class="w-75 h-75 mt-2" style="background-color: <%= @the_color_as_hex %>"></div>
+      <div class="w-75 h-75 mt-2" style="background-color: <%= @color_hex %>"></div>
     </div>
     <div class="col">
       <%= form_with url: "set_color_hex", method: :post do |form| %>
