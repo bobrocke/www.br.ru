@@ -14,10 +14,10 @@ class ColorsController < ApplicationController
     # @color_rgb = hex_to_rgb [ @color_hex ]
 
     # @color_hsb = rgb_to_hsb(@color_r, @color_g, @color_b)
-    # @color_rgb = hsb_to_rgb(@color_h, @color_s, @color_l)
+    @color_rgb = hsb_to_rgb(@color_hsb)
     # @color_hex = hsb_to_hex(@color_h, @color_s, @color_l)
 
-    # logger.debug @color_hex.inspect
+    logger.debug @color_rgb.inspect
 
     @hsb_range = [ 0 .. 10 ]
     for i in 0..10 do
@@ -26,10 +26,10 @@ class ColorsController < ApplicationController
 
     @hex_range = [ 0 .. 10 ]
     for i in 0 .. 10 do
-      @hex_range[i] = hsb_to_hex(@hsb_range[i])
+      # @hex_range[i] = hsb_to_hex(@hsb_range[i])
     end
 
-    logger.debug @hex_range.inspect
+    # logger.debug @hsb_range.inspect
   end
 
   def set_color_hex
@@ -45,7 +45,10 @@ class ColorsController < ApplicationController
 
   # https://gist.github.com/makevoid/3918299
 
-  def hsb_to_rgb(h, s, b)
+  def hsb_to_rgb(color_hsb)
+    h = color_hsb[1]
+    s = color_hsb[2]
+    b = color_hsb[3]
     h, s, b = h.to_f/360, s.to_f/100, b.to_f/100
     h_i = (h*6).to_i
     f = h*6 - h_i
@@ -61,8 +64,8 @@ class ColorsController < ApplicationController
     [ (r*255).to_i, (g*255).to_i, (b*255).to_i ]
   end
 
-  def hsb_to_hex(h, s, b)
-    color_rgb = hsb_to_rgb(h, s, b)
+  def hsb_to_hex(color_hsb)
+    color_rgb = hsb_to_rgb(color_hsb)
     color_hex = rgb_to_hex(color_rgb[1], color_rgb[2], color_rgb[2])
   end
 
