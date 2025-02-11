@@ -3,5 +3,6 @@
 		"arrowless",
 		"importmap",
 		"stylesheet"
-	]
+	],
+	"editor.fontSize": 11
 }
