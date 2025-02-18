@@ -1,9 +1,11 @@
 :root {
   --bs-primary-rgb: 0, 156, 137;
   --bs-primary: #009c89;
-  --bs-font-sans-serif: Figtree, system-ui, -apple-system, "segoe UI",
-    "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif,
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  --bs-font-sans-serif:
+    Figtree, system-ui, -apple-system, "segoe UI", "Helvetica Neue",
+    "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji",
+    "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
 
 .dropdown-item.active,
