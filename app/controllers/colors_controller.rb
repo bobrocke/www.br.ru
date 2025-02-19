@@ -14,7 +14,7 @@ class ColorsController < ApplicationController
 
     @hsb_range = [ 0 .. 10 ]
     for i in 0..10 do
-      @hsb_range[i] = [ @color_h, @color_s, ((i.to_f/10)*10) ]
+      @hsb_range[i] = [ @color_h, @color_s, (i.to_f * 10).to_i ]
     end
     # logger.debug "The rgb range: " + @hsb_range.inspect
 
@@ -49,7 +49,7 @@ class ColorsController < ApplicationController
     s = color_hsb[1]
     b = color_hsb[2]
 
-    # h, s, b = h.to_f/360, s.to_f/100, b.to_f/100
+    h, s, b = h.to_f/360, s.to_f/100, b.to_f/100
     h_i = (h*6).to_i
     f = h*6 - h_i
     p = b * (1 - s)
