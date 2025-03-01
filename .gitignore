@@ -37,6 +37,5 @@ to_do.txt
 /.vscode
 
 .gitattributes
-.gitignore
 
 /config/master.key

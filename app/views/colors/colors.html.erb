@@ -57,10 +57,10 @@
     <% for i in 0 .. 10 do %>
       <div class="row">
         <div class="col">
-          <div class="w-75 h-75 mt-2" style="background-color: <%= @hex_range[i] %>"></div>
+          <div class="w-75 h-75" style="background-color: <%= @hex_range[i] %>"></div>
         </div>
         <div class="col">
-          <span class="d-flex align-items-center"><%= @hex_range[i] %></span>
+          <div><%= @hex_range[i] %></div>
         </div>
         <div class="col">
           <p class="align-middle"><%= @rgb_range[i] %></p>
