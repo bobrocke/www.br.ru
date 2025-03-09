@@ -40,3 +40,4 @@ rails_fixes.md
 .gitattributes
 
 /config/master.key
+/config/credentials.yml.enc
